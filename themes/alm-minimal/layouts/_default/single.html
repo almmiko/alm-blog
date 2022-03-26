@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<section class="single-post">
+    <h1 class="single-post-title">{{ .Title }}</h1>
+
+    <div class="single-post-meta">
+        {{ partial "post-meta.html" .}}
+    </div>
+
+
+    <div class="single-post-content">
+      {{ .Content }}
+    </div>
+
+</section>
+
+<div class="share-edit">
+    <a href="#">Discuss on Twitter</a>
+    <span class="split">·</span>
+    <a href="#">Edit on Github</a>
+</div>
+
+{{ partial "profile.html" . }}
+
+<nav class="more-posts">
+    {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}">← {{ .Title }}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+        <a href="{{ .Permalink }}">{{ .Title }} →</a>
+    {{ end }}
+</nav>
+
+{{ end }}
+

@@ -1,0 +1,172 @@
+@import url("normalize.css");
+
+:root {
+  --main-color: #FC6D26;
+  --main-font: 'Libre Franklin', sans-serif;
+  --secondary-font: 'PT Serif', serif;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: var(--secondary-font)
+}
+
+h1, h2 {
+  font-family: var(--main-font)
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-family: var(--secondary-font)
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  max-width: 40rem;
+  margin: 3rem auto 8rem;
+}
+
+.footer {
+  margin-top: 3.75rem;
+}
+
+/* PROFILE */
+.profile {
+  display: flex;
+  text-decoration: none;
+  color: #2A2D31;
+}
+
+.profile img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.profile-title h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.313rem;
+}
+
+.profile-title h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+/* POSTS */
+.posts-list {
+  margin-top: 3.65rem;
+}
+
+.post {
+  margin-bottom: 2.813rem;
+}
+
+.post-meta {
+  display: flex;
+  color: #545454;
+  font-size: 0.875rem;
+}
+
+.post-meta-split {
+  margin: 0 0.375rem;
+}
+
+.post-title {
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.post-title a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.post-description {
+  font-size: 1.125rem;
+  line-height: 1.563rem;
+}
+
+.single-post-title {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
+.more-posts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.more-posts a {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  color: var(--main-color);
+  box-shadow: 0 1px 0 0 var(--main-color);
+  text-decoration: none;
+}
+
+.more-posts a:hover {
+  box-shadow: none;
+}
+
+/* Social */
+.social a, .split {
+  color: var(--main-color);
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.social a {
+  box-shadow: 0 1px 0 0 var(--main-color);
+  text-decoration: none;
+}
+
+.social a:hover {
+  box-shadow: none;
+}
+
+.split {
+  margin: 0 5px;
+}
+
+.social .split {
+  margin: 0 0.35rem;
+}
+
+/* Edit and Share */
+.share-edit {
+  margin: 2rem 0;
+}
+.share-edit a {
+  color: var(--main-color);
+  font-size: 1rem;
+  box-shadow: 0 1px 0 0 var(--main-color);
+  text-decoration: none;
+}
+
+.share-edit a:hover {
+  box-shadow: none;
+}
+
+
+/*body {*/
+/*  line-height: 1;*/
+/*  font: normal 15px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+/*  color: #404040;*/
+/*  line-height: 1.75;*/
+/*  letter-spacing: 0.008em;*/
+/*}*/

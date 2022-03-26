@@ -1,0 +1,11 @@
+<section class="posts-list">
+    {{ range .Pages }}
+        <article class="post">
+            <h2 class="post-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            {{ partial "post-meta.html" .}}
+            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis id habitant mauris vel tortor orci fames. Morbi praesent vitae ultrices sapien, pellentesque. </p>
+        </article>
+    {{ end }}
+</section>

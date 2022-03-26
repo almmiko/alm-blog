@@ -1,0 +1,7 @@
+name = "alm-minimal"
+description = "A Minimalistic hugo theme."
+tags = ["blog", "minimalistic", "responsive"]
+
+[author]
+    name = "Alexander Mykolaichuk"
+    homepage = "https://github.com/almmiko"
