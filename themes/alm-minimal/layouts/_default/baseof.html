@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" .}}{{ .Title }}{{ end }}</title>
 
     {{ partial "head.html" . }}
-
   </head>
   <body>
     <main class="main">

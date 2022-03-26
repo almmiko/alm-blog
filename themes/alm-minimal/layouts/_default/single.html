@@ -7,7 +7,6 @@
         {{ partial "post-meta.html" .}}
     </div>
 
-
     <div class="single-post-content">
       {{ .Content }}
     </div>
@@ -15,9 +14,9 @@
 </section>
 
 <div class="share-edit">
-    <a href="#">Discuss on Twitter</a>
+    <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener noreferrer">Discuss on Twitter</a>
     <span class="split">·</span>
-    <a href="#">Edit on Github</a>
+    <a href="{{ .Site.Params.githubEditPath }}{{ .File.LogicalName }}" target="_blank" rel="noopener noreferrer">Edit on Github</a>
 </div>
 
 {{ partial "profile.html" . }}

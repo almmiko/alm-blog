@@ -1,12 +1,7 @@
 ---
 title: "Deploying Hugo on AWS with Gitlab CI"
 description: "How to deploy Hugo website on AWS using Gitlab CI"
-tags: [
-    "go",
-    "aws",
-    "docker",
-    "hugo",
-]
+
 date: 2018-10-09T11:48:07+03:00
 ---
 
@@ -21,12 +16,12 @@ Installation process can be found on [hugo quick start](https://gohugo.io/gettin
 To create a new Hugo website we need to use Hugo CLI.
 
 ```bash
-   $ hugo new site myNewWebsite
+$ hugo new site myNewWebsite
 ```
 
 And create a first post.
 ```bash
-   $ hugo new posts/my-post.md
+$ hugo new posts/my-post.md
 ```
 
 For information about all CLI commands and file structure visit [official Hugo documentation](https://gohugo.io/documentation/).

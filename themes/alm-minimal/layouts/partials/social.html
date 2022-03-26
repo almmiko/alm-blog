@@ -1,9 +1,9 @@
 <div class="social">
-    <a href="#">Twitter</a>
+    <a href="{{ .Site.Social.twitter | safeURL}}" target="_blank" rel="noopener noreferrer">Twitter</a>
     <span class="split">·</span>
-    <a href="#">Github</a>
+    <a href="{{ .Site.Social.github | safeURL}}" target="_blank" rel="noopener noreferrer">Github</a>
     <span class="split">·</span>
-    <a href="#">Linkedin</a>
+    <a href="{{ .Site.Social.linkedin | safeURL}}" target="_blank" rel="noopener noreferrer">Linkedin</a>
     <span class="split">·</span>
     <a href="#">RSS</a>
 </div>

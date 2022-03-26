@@ -1,7 +1,7 @@
 <a href="/" class="profile">
     <img src="{{ "/images/avatar.jpg" | absURL }}" alt="Alex M Profile Photo">
     <div class="profile-title">
-        <h1>Alexander Mykolaichuk</h1>
-        <h2>Software Engineer / Distributed Systems / Cloud Native</h2>
+        <h1>{{ .Site.Author.name }}</h1>
+        <h2>{{ .Site.Author.about }}</h2>
     </div>
 </a>

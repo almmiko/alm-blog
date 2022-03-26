@@ -1,4 +1,23 @@
-baseURL: https://example.com
+baseURL: https://alm-research.com
 languageCode: en-us
-title: Alexander Mykolaichuk
+title: Alexander Mykolaichuk - Personal Blog
 theme: alm-minimal
+disableKinds: ["taxonomy", "taxonomyTerm"]
+
+Author:
+  name: Alexander Mykolaichuk
+  about: Software Engineer / Distributed Systems / Cloud Native
+
+Params:
+  githubEditPath: https://github.com/almmiko/alm-blog/edit/main/content/
+
+Social:
+  twitter: https://twitter.com/almmiko
+  twitterHandle: almmiko
+  github: https://github.com/almmiko
+  linkedin: https://www.linkedin.com/in/alexander-mykolaichuk
+
+Markup:
+  highlight:
+    noClasses: false
+
