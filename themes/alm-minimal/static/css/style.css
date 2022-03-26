@@ -2,25 +2,47 @@
 
 :root {
   --main-color: #FC6D26;
-  --main-font: 'Libre Franklin', sans-serif;
-  --secondary-font: 'PT Serif', serif;
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Merriweather', serif;
+  --text-color: #222;
 }
 
 html, body {
-  font-size: 16px;
-  font-family: var(--secondary-font)
+  font: 100%/1.75 var(--secondary-font);
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
 }
 
-h1, h2 {
-  font-family: var(--main-font)
+body {
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  word-wrap: break-word;
+  font-kerning: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
+
+h2 {
+  line-height: 1.1;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
   font-weight: 700;
+  padding: 0;
+  margin: 0 0 1.75rem;
+  text-rendering: optimizeLegibility;
+  font-size: 2.5rem;
+  line-height: 1.1;
 }
 
 p {
-  font-family: var(--secondary-font)
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  margin: 0 0 1.75rem;
+  padding: 0;
 }
 
 img {
@@ -28,8 +50,8 @@ img {
 }
 
 .main {
-  max-width: 40rem;
-  margin: 3rem auto 8rem;
+  max-width: 42rem;
+  margin: 3rem auto 5rem;
 }
 
 .footer {
@@ -56,13 +78,13 @@ img {
 }
 
 .profile-title h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0.313rem;
+  font-size: 1.375rem;
+  margin-bottom: 0.3rem;
 }
 
 .profile-title h2 {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: normal;
 }
 
@@ -75,10 +97,16 @@ img {
   margin-bottom: 2.813rem;
 }
 
+.posts-list .post .post-meta {
+  margin-bottom: 1rem;
+}
+
 .post-meta {
   display: flex;
-  color: #545454;
-  font-size: 0.875rem;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  margin-bottom: 1.75rem;
+  margin-top: -1rem;
 }
 
 .post-meta-split {
@@ -95,11 +123,6 @@ img {
   text-decoration: none;
 }
 
-.post-description {
-  font-size: 1.125rem;
-  line-height: 1.563rem;
-}
-
 .single-post-title {
   color: var(--main-color);
   font-size: 2rem;
@@ -108,7 +131,7 @@ img {
 .more-posts {
   display: flex;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
 }
 
 .more-posts a {
@@ -160,6 +183,17 @@ img {
 
 .share-edit a:hover {
   box-shadow: none;
+}
+
+/* Content */
+
+.anchor svg {
+  stroke: var(--main-color);
+  visibility: hidden;
+}
+
+h2:hover .anchor svg {
+  visibility: visible;
 }
 
 
