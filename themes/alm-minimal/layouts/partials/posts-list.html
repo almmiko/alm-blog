@@ -5,7 +5,7 @@
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h2>
             {{ partial "post-meta.html" .}}
-            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis id habitant mauris vel tortor orci fames. Morbi praesent vitae ultrices sapien, pellentesque. </p>
+            <p class="post-description">{{ .Description }}</p>
         </article>
     {{ end }}
 </section>

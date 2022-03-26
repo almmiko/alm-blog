@@ -36,7 +36,7 @@ The Process of bucket creation is very simple, just follow steps in the **Create
 
 I will create a bucket with name **my-new-website-hugo**. Then we need to set up bucket access. In the **Properties** tab select **Static website hosting** and set **Use this bucket to host a website**. Input your index document. In our case, we have **index.html**.
 
-![image](/img/blog/hugo-on-aws-with-gitlab-ci/S3_bucket-setup.jpg)
+![image](/images/hugo-on-aws-with-gitlab-ci/S3_bucket-setup.jpg)
 
 Then we need to set up the bucket access policy. In the **Permissions** tab select **Bucket policy** and paste JSON configuration.
 
@@ -108,13 +108,13 @@ This configuration will grant CRUD access to the **my-new-website-hugo** bucket 
 
 In **Users** section click **Add user**.
 
-![image](/img/blog/hugo-on-aws-with-gitlab-ci/IAM_Management_Console.jpg)
+![image](/images/hugo-on-aws-with-gitlab-ci/IAM_Management_Console.jpg)
 
 Type user name and select **Programmatic access** in **Access type**.
 
 Then select **Attach existing policies directly** and find the policy that you have created for Gitlab CI.
 
-![image](/img/blog/hugo-on-aws-with-gitlab-ci/IAM_add-user.jpg)
+![image](/images/hugo-on-aws-with-gitlab-ci/IAM_add-user.jpg)
 
 After successfully created user you will have **Access key ID** and **Secret access key**. Which we will use in the gitlab to get access to AWS.
 
@@ -130,7 +130,7 @@ In the **Origin Domain Name** paste your bucket endpoint. This endpoint can be f
 
 First, we need set **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY**. This keys we got when creating the user in IAM.
 
-![image](/img/blog/hugo-on-aws-with-gitlab-ci/gitlab-ci-vars.jpg)
+![image](/images/hugo-on-aws-with-gitlab-ci/gitlab-ci-vars.jpg)
 
 Create **.gitlab-ci.yml** in the root of your hugo website.
 
