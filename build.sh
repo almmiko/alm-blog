@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-if [ -z ${BASE_URL} ]; then
-    echo "BASE_URL is unset, use VERCEL_URL: '$VERCEL_URL'";
-    hugo -b https://$VERCEL_URL -D --gc
+if [[ ${VERCEL_ENV} == "production" ]]; then
+    echo "Production deployment with VERCEL_URL: '$VERCEL_URL'";
+    hugo -b https://$VERCEL_URL --gc
 else
-    echo "BASE_URL is set to '$BASE_URL'";
-    hugo -b https://$BASE_URL --gc
+    echo "Not production deployment with VERCEL_URL: '$VERCEL_URL'";
+    hugo -b https://$VERCEL_URL -D --gc
 fi
