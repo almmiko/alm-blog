@@ -1,7 +1,7 @@
 ---
 title: "Deploying Hugo on AWS with Gitlab CI"
 description: "How to deploy Hugo website on AWS using Gitlab CI"
-
+image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2588&q=80"
 date: 2018-10-09T11:48:07+03:00
 ---
 

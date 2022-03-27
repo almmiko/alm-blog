@@ -9,9 +9,12 @@
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{if .IsHome }}{{ .Site.Author.about }}{{ else }}{{ .Description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{if .IsHome }}{{ "/images/avatar.jpg" | absURL }}{{ else }}{{ .Params.image | safeURL }}{{ end }}">
 
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{if .IsHome }}{{ .Site.Author.about }}{{ else }}{{ .Description }}{{ end }}">
+<meta name="twitter:image" content="{{if .IsHome }}{{ "/images/avatar.jpg" | absURL }}{{ else }}{{ .Params.image | safeURL }}{{ end }}">
+<meta name="twitter:card" content="summary_large_image">
 
 <meta name="robots" content="index, follow">
 
@@ -32,8 +35,8 @@
 <link rel="stylesheet" href="{{ "/css/style.css" | absURL }}">
 
 
-<!--{{ if .Site.Params.enableGoogleAnalytics }} -->
-<!--    {{ template "_internal/google_analytics_async.html" . }}-->
-<!--{{ end }}-->
+{{ if getenv "HUGO_ENABLE_GA" }}
+    {{ template "_internal/google_analytics.html" . }}
+{{ end }}
 
 <link href="{{ "/index.xml" | absURL }}" rel="alternate" type="application/rss+xml" title="Alexander Mykolaichuk's Blog RSS Feed" />
