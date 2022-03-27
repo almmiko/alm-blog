@@ -1,4 +1,4 @@
-baseURL: https://alm-research.com #overrided during build
+baseURL: https://alm-research.com #replaced during the build
 languageCode: en-us
 title: Alexander Mykolaichuk - Personal Blog
 theme: alm-minimal
