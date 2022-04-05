@@ -197,7 +197,6 @@ h2:hover .anchor svg {
   visibility: visible;
 }
 
-
 /* Read More Button */
 .read-more-button {
   position: fixed;
@@ -218,7 +217,6 @@ h2:hover .anchor svg {
   box-shadow: none;
 }
 
-
 .read-more-icon {
   height: 1.5rem;
   width: 1.5rem;
@@ -235,4 +233,3 @@ h2:hover .anchor svg {
     transition: ease-out 0.4s;
   }
 }
-
