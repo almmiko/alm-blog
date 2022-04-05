@@ -8,15 +8,24 @@
     </div>
 
     <div class="single-post-content">
-      {{ .Content }}
+        {{ .Content }}
     </div>
 
 </section>
 
+<a href="/" target="_blank" rel="noopener noreferrer" class="read-more-button">
+    <svg class="read-more-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 19H3V17H16V19ZM21 9H3V11H21V9ZM3 5V7H14V5H3ZM17 5V7H21V5H17ZM11 13V15H21V13H11ZM3 13V15H8V13H3Z" />
+    </svg>
+    Read more
+</a>
+
 <div class="share-edit">
-    <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener noreferrer">Discuss on Twitter</a>
+    <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank"
+        rel="noopener noreferrer">Discuss on Twitter</a>
     <span class="split">·</span>
-    <a href="{{ .Site.Params.githubEditPath }}{{ .File.LogicalName }}" target="_blank" rel="noopener noreferrer">Edit on Github</a>
+    <a href="{{ .Site.Params.githubEditPath }}{{ .File.LogicalName }}" target="_blank" rel="noopener noreferrer">Edit on
+        Github</a>
 </div>
 
 {{ partial "profile.html" . }}
@@ -31,4 +40,3 @@
 </nav>
 
 {{ end }}
-

@@ -196,3 +196,40 @@ code, kbd, samp {
 h2:hover .anchor svg {
   visibility: visible;
 }
+
+/* Read More Button */
+.read-more-button {
+  position: fixed;
+  right: -6.438rem;
+  bottom: 5rem;
+  height: 3.125rem;
+  width: 9.375rem;
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-out 0.4s;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: normal;
+  box-shadow: none;
+}
+
+.read-more-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.688rem;
+}
+
+.read-more-icon path {
+  fill: #fff;
+}
+
+@media (min-width: 1024px) {
+  .read-more-button:hover {
+    right: 0;
+    transition: ease-out 0.4s;
+  }
+}
