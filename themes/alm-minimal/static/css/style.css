@@ -202,17 +202,17 @@ h2:hover .anchor svg {
 .read-more-button {
   position: fixed;
   right: -6.438rem;
-  bottom: 10rem;
+  bottom: 5rem;
   height: 3.125rem;
   width: 9.375rem;
   color: #fff;
-  background-color: #ce3c80;
+  background-color: var(--main-color);
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: ease-out 0.4s;
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   font-size: 1rem;
   font-weight: normal;
   box-shadow: none;
@@ -229,8 +229,10 @@ h2:hover .anchor svg {
   fill: #fff;
 }
 
-.read-more-button:hover {
-  right: 0;
-  transition: ease-out 0.4s;
-  cursor: pointer;
+@media (min-width: 1024px) {
+  .read-more-button:hover {
+    right: 0;
+    transition: ease-out 0.4s;
+  }
 }
+
