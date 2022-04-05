@@ -31,7 +31,7 @@ For information about all CLI commands and file structure visit [official Hugo d
 In this section, we are going to setup S3, IAM, and CloudFront.
 
 ### Create Bucket
- 
+
 The Process of bucket creation is very simple, just follow steps in the **Create bucket** step form.
 
 I will create a bucket with name **my-new-website-hugo**. Then we need to set up bucket access. In the **Properties** tab select **Static website hosting** and set **Use this bucket to host a website**. Input your index document. In our case, we have **index.html**.
@@ -54,15 +54,14 @@ Then we need to set up the bucket access policy. In the **Permissions** tab sele
     ]
 }
 ```
- 
+
  This configuration will make bucket public.
 
 ### Create IAM Policy
 
 We need to create a new policy and then attach this policy to our gitlab-ci user.
 
-In the **Identity and Access Management (IAM)** select **Policies** and click **Create 
-policy**
+In the **Identity and Access Management (IAM)** select **Policies** and click **Create policy**
 
 Select JSON tab and paste the following configuration.
 
@@ -171,4 +170,4 @@ deploys3:
 
 This config will create build and deploy stages. Ci only will be triggered if you push to master branch.
 
-That's all configuration we need. To see deployed website open you CloudFront distribution Domain Name or Bucket Endpoint.                                             
+That's all configuration we need. To see deployed website open you CloudFront distribution Domain Name or Bucket Endpoint.
