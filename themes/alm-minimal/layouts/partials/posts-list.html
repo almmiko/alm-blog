@@ -1,11 +1,11 @@
 <section class="posts-list">
     {{ range .Pages }}
-        <article class="post">
-            <h2 class="post-title">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h2>
-            {{ partial "post-meta.html" .}}
-            <p class="post-description">{{ .Description }}</p>
-        </article>
+    <article class="post">
+        <h2 class="post-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        {{ partial "post-meta.html" .}}
+        <p class="post-description">{{ .Description }}</p>
+    </article>
     {{ end }}
 </section>
