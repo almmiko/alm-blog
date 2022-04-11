@@ -2,6 +2,6 @@
 title: "{{ replace .Name "-" " " | title }}"
 description: ""
 image: ""
-date: {{ .Date | time.Format ":date_long" }}
+date: {{ .Date }}
 draft: true
 ---
