@@ -1,7 +1,7 @@
 ---
 title: "Build Preview Environments for CI/CD Workflows Using Terraform CDK and AWS"
 description: ""
-image: ""
+image: "/images/preview-envs/aws_preview_envs.svg"
 date: 2022-04-11
 draft: true
 ---
@@ -12,7 +12,13 @@ In this tutorial, you will build preview environments on AWS using Terraform CDK
 
 The source code is available on Github.
 
-https://github.com/almmiko/aws-previews-deployment -- Nice Github Preview Link Card
+<a href="https://github.com/almmiko/aws-previews-deployment" target="_blank" rel="noopener noreferrer" class="github-share-box">
+  <h2>GitHub - almmiko/aws-previews-deployment: Build AWS Infrastructure for Preview Environments</h2>
+  <h3>
+  The AWS infrastructure for showcasing How to Build Preview Environments for Modern CI/CD Workflows Using Terraform CDK…
+  </h3>
+  <p>github.com</p>
+</a>
 
 If you do not have Terraform and CDKTF installed on your system and configured AWS credentials, follow the prerequisites sections to install it before you continue with this tutorial.
 

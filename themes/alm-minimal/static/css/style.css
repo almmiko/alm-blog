@@ -92,6 +92,36 @@ p > code {
   margin: 0 0 1.75rem;
 }
 
+.github-share-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.25rem;
+  box-shadow: inset 0 0 0 0.063rem rgb(230, 230, 230);
+  margin: 0 0 1.75rem;
+}
+
+.github-share-box:hover {
+  box-shadow: inset 0 0 0 0.063rem rgb(230 230 230);
+}
+
+.github-share-box h2, .github-share-box h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.github-share-box h3 {
+  font-weight: normal;
+  font-size: 0.938rem;
+  color: rgba(117, 117, 117, 1);
+}
+
+.github-share-box p {
+  font-size: 0.813rem;
+  color: rgba(117, 117, 117, 1);
+  margin: 0;
+}
+
 .main {
   max-width: 42rem;
   margin-left: auto;

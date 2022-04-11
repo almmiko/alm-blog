@@ -18,6 +18,8 @@ Social:
   linkedin: https://www.linkedin.com/in/alexander-mykolaichuk
 
 Markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     noClasses: false
-
