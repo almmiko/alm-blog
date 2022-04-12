@@ -2,11 +2,11 @@
 title: "Build Preview Environments for CI/CD Workflows Using Terraform CDK and AWS"
 description: "Learn how to build preview environments using AWS CloudFront, AWS Route53, AWS S3, and AWS Lambda@Edge with Terraform CDK."
 image: "/images/preview-envs/aws_preview_envs.jpeg"
-date: 2022-04-11
+date: 2022-04-12
 draft: true
 ---
 
-Traditional predefined deployment environments such as DEV, TEST, STAGE, and PROD are limiting in providing fast feedback loops. To improve developer's and end-user experiences, companies like [Vercel](https://vercel.com/), [AWS](https://aws.amazon.com/amplify/hosting/) and many more provide the functionality for deploying apps to multiple environments.
+Traditional predefined deployment environments such as DEV, TEST, STAGE, and PROD limit providing fast feedback loops. To improve developers’ and end-user experiences, companies like [Vercel](https://vercel.com/), [AWS](https://aws.amazon.com/amplify/hosting/) and many more offer the functionality for deploying apps to dynamic environments.
 
 In this tutorial, you will build preview environments on AWS using Terraform CDK and deploy a React application.
 
@@ -26,8 +26,8 @@ If you do not have Terraform and CDKTF installed on your system and configured A
 
 To follow this tutorial you will need:
 
-- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) installed.
-- [AWS account](https://aws.amazon.com/free) and [AWS credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) that allow you to programatically create resources.
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) installed
+- [AWS account](https://aws.amazon.com/free) and [AWS credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) that allow you to programatically create resources
 - [Terraform](https://www.terraform.io/downloads.html) v1.0+
 - [CDK for Terraform](https://learn.hashicorp.com/tutorials/terraform/cdktf-install) v0.9+
 
@@ -35,9 +35,9 @@ To follow this tutorial you will need:
 
 Creating end-to-end functionality for preview environments includes building CI/CD workflow and infrastructure for hosting application build versions.
 
-This tutorial will focus on building the infrastructure part that allows using wildcard domain name created using Route53 to route traffic to application versions stored in the AWS S3 bucket.
+This tutorial will focus on building the infrastructure part that allows using wildcard domain name created using AWS Route53 to route traffic to application versions stored in the AWS S3 bucket.
 
-You will use AWS CloudFront CDN that exposes the AWS S3 bucket to the outside world and allow us to use Lambda@Edge for creating redirect logic.
+You will use AWS CloudFront CDN that exposes the AWS S3 bucket to the outside world and allow you to utilize Lambda@Edge for creating redirect logic.
 
 Lambda@Edge is associated with CloudFront as `origin-request` will intercept the requests and redirects them to the correct path (folder) on the AWS S3 bucket.
 
