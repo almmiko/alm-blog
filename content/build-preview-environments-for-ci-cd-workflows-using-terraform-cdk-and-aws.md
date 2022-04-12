@@ -1,6 +1,6 @@
 ---
 title: "Build Preview Environments for CI/CD Workflows Using Terraform CDK and AWS"
-description: ""
+description: "Learn how to build preview environments using AWS CloudFront, AWS Route53, AWS S3, and AWS Lambda@Edge with Terraform CDK."
 image: "/images/preview-envs/aws_preview_envs.svg"
 date: 2022-04-11
 draft: true
