@@ -73,6 +73,16 @@ blockquote {
   border-left: 0.188rem solid var(--main-color);
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  color: rgba(117, 117, 117, 1);
+  text-align: center;
+  font-family: var(--main-font);
+}
+
 code, kbd, samp {
   font-family: 'Fira Code', monospace;
   font-size: 1rem;

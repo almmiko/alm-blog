@@ -1,7 +1,7 @@
 ---
 title: "Build Preview Environments for CI/CD Workflows Using Terraform CDK and AWS"
 description: "Learn how to build preview environments using AWS CloudFront, AWS Route53, AWS S3, and AWS Lambda@Edge with Terraform CDK."
-image: "/images/preview-envs/aws_preview_envs.svg"
+image: "/images/preview-envs/aws_preview_envs.jpeg"
 date: 2022-04-11
 draft: true
 ---
@@ -41,11 +41,11 @@ You will use AWS CloudFront CDN that exposes the AWS S3 bucket to the outside wo
 
 Lambda@Edge is associated with CloudFront as `origin-request` will intercept the requests and redirects them to the correct path (folder) on the AWS S3 bucket.
 
-![architecture diagram](/images/preview-envs/aws_preview_envs.svg)
+![architecture diagram](/images/preview-envs/aws_preview_envs.jpeg "Architecture Diagram")
 
 The final result you will get after completing this tutorial.
 
-![result](/images/preview-envs/url-previews.gif)
+![final result](/images/preview-envs/url-previews.gif)
 
 ## Provision AWS Resources
 
