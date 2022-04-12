@@ -3,7 +3,6 @@ title: "Build Preview Environments for CI/CD Workflows Using Terraform CDK and A
 description: "Learn how to build preview environments using AWS CloudFront, AWS Route53, AWS S3, and AWS Lambda@Edge with Terraform CDK."
 image: "/images/preview-envs/aws_preview_envs.jpeg"
 date: 2022-04-12
-draft: true
 ---
 
 Traditional predefined deployment environments such as DEV, TEST, STAGE, and PROD limit providing fast feedback loops. To improve developers’ and end-user experiences, companies like [Vercel](https://vercel.com/), [AWS](https://aws.amazon.com/amplify/hosting/) and many more offer the functionality for deploying apps to dynamic environments.
