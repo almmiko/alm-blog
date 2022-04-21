@@ -5,7 +5,9 @@ image: "/images/preview-envs/aws_preview_envs.jpeg"
 date: 2022-04-12
 ---
 
-Traditional predefined deployment environments such as DEV, TEST, STAGE, and PROD limit providing fast feedback loops. To improve developers’ and end-user experiences, companies like [Vercel](https://vercel.com/), [AWS](https://aws.amazon.com/amplify/hosting/) and many more offer the functionality for deploying apps to dynamic environments.
+Traditional predefined deployment environments such as _dev_, _test_, _stage_, and _prod_ are limited in providing fast feedback loops.
+
+To improve developers’ and end-user experiences, companies like [Vercel](https://vercel.com/), [AWS](https://aws.amazon.com/amplify/hosting/), [Netlify](https://www.netlify.com/), and many more offer the functionality for deploying apps to dynamic environments.
 
 In this tutorial, you will build preview environments on AWS using Terraform CDK and deploy a React application.
 
@@ -26,7 +28,7 @@ If you do not have Terraform and CDKTF installed on your system and configured A
 To follow this tutorial you will need:
 
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) installed
-- [AWS account](https://aws.amazon.com/free) and [AWS credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) that allow you to programatically create resources
+- [AWS account](https://aws.amazon.com/free) and [AWS credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) that allow you to create resources programmatically
 - [Terraform](https://www.terraform.io/downloads.html) v1.0+
 - [CDK for Terraform](https://learn.hashicorp.com/tutorials/terraform/cdktf-install) v0.9+
 
