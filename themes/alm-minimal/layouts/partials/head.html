@@ -40,3 +40,9 @@
 {{ end }}
 
 <link href="{{ "/index.xml" | absURL }}" rel="alternate" type="application/rss+xml" title="Alexander Mykolaichuk's Blog RSS Feed" />
+
+{{ if .Params.canonicalUrl }}
+<link rel="canonical" href="{{ .Params.canonicalUrl }}">
+{{ else }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{ end }}

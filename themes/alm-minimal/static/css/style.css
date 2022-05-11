@@ -46,6 +46,10 @@ p {
   padding: 0;
 }
 
+li {
+  color: var(--text-color);
+}
+
 ul {
   margin: 0 0 1.75rem;
 }
@@ -84,13 +88,18 @@ figcaption {
   font-family: var(--main-font);
 }
 
+strong {
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+
 code, kbd, samp {
   font-family: 'Fira Code', monospace;
   font-size: 1rem;
   display: inline-block;
 }
 
-p > code {
+p > code, li > code {
   padding: 0.2rem 0.4rem;
   margin: 0;
   font-weight: bold;
@@ -284,6 +293,19 @@ h2:hover .anchor svg {
 
 .read-more-icon path {
   fill: #fff;
+}
+
+.canonical-block::before {
+  content:"...";
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  color: rgb(8, 8, 8);
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.313rem;
+  margin-bottom: 1.563rem;
+  margin-top: -1.25rem;
 }
 
 @media (min-width: 1024px) {

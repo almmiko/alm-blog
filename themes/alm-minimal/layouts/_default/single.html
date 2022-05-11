@@ -11,6 +11,14 @@
         {{ .Content }}
     </div>
 
+    {{ if .Params.canonicalUrlText }}
+    <div class="canonical-block">
+        <em>
+            Originally published at
+            <a href="{{ .Params.canonicalUrl }}" target="_blank" rel="noopener noreferrer">{{ .Params.canonicalUrlText }}</a>
+        </em>
+    </div>
+    {{ end }}
 </section>
 
 <a href="/" target="_blank" rel="noopener noreferrer" class="read-more-button">
