@@ -2,10 +2,9 @@
 title: "Binary Search for Technical Interviews"
 description: "Learn how to effectively use binary search algorithm, solving frequently-asked technical interview problems."
 image: "/images/binary-search-tech-interviews/binary-search-preview.png"
-date: 2022-05-10
+date: 2022-05-11
 canonicalUrl: "https://medium.com/@almmiko/binary-search-for-technical-interviews-27861a823101"
 canonicalUrlText: "https://medium.com/@almmiko"
-draft: true
 ---
 
 ![Binary search](/images/binary-search-tech-interviews/binary-search-preview.png)
